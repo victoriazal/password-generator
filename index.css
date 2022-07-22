@@ -1,0 +1,90 @@
+body {
+    background: #1C1C1C;
+}
+
+button {
+    cursor: pointer;
+    margin-left: 120px;
+    width: 191px;
+    height: 42px;
+    background: #FBBF24;
+    border-radius: 6px;
+    border: none;
+    color: white;
+}
+
+.form {
+    margin: 9% auto;
+    background: #1F2937;
+    width: 750px;
+    height: 550px;
+    left: 62px;
+    top: 64px;
+}
+
+h2 {
+    width: 354px;
+    height: 80px;
+    font-family: 'Karla';
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: -0.025em;
+    color: #FFFFFF;
+    padding: 115px 144px 10px 51px;
+}
+
+.partText {
+    color: #FBBF24;
+}
+
+h3 {
+    margin: none;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    color: #D5D4D8;
+    padding: 10px 126px 40px 52px;
+}
+
+h4{
+    padding-left: 55%;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    color: #D5D4D8;  
+}
+
+hr {
+    border: 1px solid #2F3E53;
+    margin-top: 50px;
+    width: 450px;
+}
+
+.password {
+    width: 400px;
+    height: 39px;
+    background: #273549;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input{
+    height: 42px;
+    margin-left: 100px;
+    padding-left: 30px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.712);
+}
+input[type=text]:focus {
+    background-color: rgb(255, 255, 255);
+    
+  }
+
+p{  
+    font-family: 'Inter';
+    line-height: 32px;
+    text-align: center;
+    color: #55F991;  
+}
