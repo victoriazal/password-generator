@@ -3,16 +3,42 @@ const characters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", 
     "$", "%", "^", "&", "*", "(", ")", "_", "-", "+", "=", "{", "[", "}", "]", ",", "|", ":", ";", "<", ">", ".", "?",
     "/"];
 
-let password = document.getElementById("password")
+const copyBtn1 = document.getElementById("copy-btn-1")
+const copyBtn2 = document.getElementById("copy-btn-2")
+
+
+password1.addEventListener("focus", () => password1.select())
+
+let inputEl = document.getElementById("input")
+
 
 function generatePassword() {
-    let passwordLength = Number(document.getElementById('input').value);
+    let passwordLength = Number(inputEl.value);
     if (passwordLength <= 40) {
-        let randomPassword = ""
+        let randomPassword1 = ""
         for (let i = 0; i < passwordLength; i++) {
-            randomPassword += characters[Math.floor(Math.random() * characters.length)]
+            randomPassword1 += characters[Math.floor(Math.random() * characters.length)]
         }
-        password.textContent = randomPassword
+        password1.textContent = randomPassword1
+        let randomPassword2 = ""
+        for (let i = 0; i < passwordLength; i++) {
+            randomPassword2 += characters[Math.floor(Math.random() * characters.length)]
+        }
+        password2.textContent = randomPassword2
     }
     else { alert("No more than 40 characters") }
+    inputEl.value = ""
 }
+
+copyBtn1.addEventListener("click", () => {
+    const password1 = document.getElementById("password1");
+    const currentPassword1 = password1.textContent;
+    navigator.clipboard.writeText(currentPassword1);
+})
+copyBtn2.addEventListener("click", () => {
+    const password2 = document.getElementById("password2");
+
+    const currentPassword2 = password2.textContent;
+    console.log(currentPassword2)
+    navigator.clipboard.writeText(currentPassword2);
+})

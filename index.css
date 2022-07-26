@@ -2,7 +2,7 @@ body {
     background: #1C1C1C;
 }
 
-button {
+.gen-btn {
     cursor: pointer;
     margin-left: 120px;
     width: 191px;
@@ -13,11 +13,34 @@ button {
     color: white;
 }
 
+.copy-btn {
+    margin-top: 18px;
+    border: none;
+    color: white;
+    width: 35px;
+    height: 35px;
+    background: #FBBF24;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+.copy-btn:active {
+    background-color: #FBBF24;
+    box-shadow: 0 5px rgb(57, 66, 105);
+    transform: translateY(4px);
+}
+
+copy-btn:hover {
+    background-color: #FCD34D;
+    color: black
+}
+
 .form {
     margin: 9% auto;
     background: #1F2937;
     width: 750px;
-    height: 550px;
+    height: 610px;
     left: 62px;
     top: 64px;
 }
@@ -47,7 +70,7 @@ h3 {
 }
 
 h4 {
-    padding-left: 55%;
+    padding-left: 57%;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 12px;
@@ -65,8 +88,8 @@ hr {
     height: 39px;
     background: #273549;
     border-radius: 6px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 150px;
+    margin-right: 10px;
 }
 
 input {
@@ -88,4 +111,8 @@ p {
     line-height: 32px;
     text-align: center;
     color: #55F991;
+}
+
+.passwords {
+    display: flex;
 }

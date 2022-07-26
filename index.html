@@ -7,22 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Karla:wght@400;700;800&family=Poppins&display=swap"
         rel="stylesheet"><!--  -->
     <link rel="stylesheet" href="./index.css">
-    <title>Document</title>
+    <title>PassGen</title>
 </head>
 
 <body>
     <div class="form">
         <h2>Generate a <span class="partText">random password</span> </h2>
         <h3>Never use an insecure password again.</h3>
-        <button onclick="generatePassword()">Generate passwords</button>
+        <button class="gen-btn" onclick="generatePassword()">Generate passwords</button>
         <input type="text" id="input" placeholder="Number of characters">
         <h4>*maximum 40 characters</h4>
         <hr>
-        <p id="password" class="password"></p>
+        <div id="copy-pass-1" class="passwords">
+            <p id="password1" class="password"></p>
+            <button id="copy-btn-1" class="copy-btn" type="button">
+                <span class="material-symbols-outlined">
+                    content_copy
+                    </span>
+            </button>
+        </div>
+        <div id="copy-pass-2" class="passwords">
+            <p id="password2" class="password"></p>
+            <button id="copy-btn-2" class="copy-btn" type="button">
+                <span class="material-symbols-outlined">
+                    content_copy
+                    </span>
+            </button>
+        </div>
+        
     </div>
 </body>
 <script src="./index.js"></script>
