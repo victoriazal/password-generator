@@ -17,18 +17,24 @@
 
 <body>
     <div class="form">
-        <h2>Generate a <span class="partText">random password</span> </h2>
-        <h3>Never use an insecure password again.</h3>
-        <button class="gen-btn" onclick="generatePassword()">Generate passwords</button>
-        <input type="text" id="input" placeholder="Number of characters">
-        <h4>*maximum 40 characters</h4>
+        <div class="form-header">
+            <h2>Generate a <span class="partText">random password</span> </h2>
+            <h3>Never use an insecure password again.</h3>
+        </div>
         <hr>
+        <form class="form-manager" action="button">
+        <button class="gen-btn" onclick="generatePassword()">Generate passwords</button>
+        <div>
+            <input type="text" id="input" required="true" placeholder="Number of characters">
+            <h4>*maximum 40 characters</h4>
+        </div>
+        </form>
         <div id="copy-pass-1" class="passwords">
             <p id="password1" class="password"></p>
             <button id="copy-btn-1" class="copy-btn" type="button">
                 <span class="material-symbols-outlined">
                     content_copy
-                    </span>
+                </span>
             </button>
         </div>
         <div id="copy-pass-2" class="passwords">
@@ -36,7 +42,7 @@
             <button id="copy-btn-2" class="copy-btn" type="button">
                 <span class="material-symbols-outlined">
                     content_copy
-                    </span>
+                </span>
             </button>
         </div>
         

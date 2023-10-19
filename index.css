@@ -4,7 +4,6 @@ body {
 
 .gen-btn {
     cursor: pointer;
-    margin-left: 120px;
     width: 191px;
     height: 42px;
     background: #FBBF24;
@@ -14,7 +13,6 @@ body {
 }
 
 .copy-btn {
-    margin-top: 18px;
     border: none;
     color: white;
     width: 35px;
@@ -22,7 +20,7 @@ body {
     background: #FBBF24;
     border-radius: 6px;
     cursor: pointer;
-
+    margin-left: 5px;
 }
 
 .copy-btn:active {
@@ -37,14 +35,23 @@ copy-btn:hover {
 }
 
 .form {
-    margin: 9% auto;
+    margin: 0 auto;
+    border-radius: 50px;
     background: #1F2937;
-    width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
     height: 610px;
-    left: 62px;
-    top: 64px;
 }
 
+.form-manager{
+    margin-top: 20px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
 h2 {
     width: 354px;
     height: 80px;
@@ -53,7 +60,6 @@ h2 {
     font-size: 40px;
     letter-spacing: -0.025em;
     color: #FFFFFF;
-    padding: 115px 144px 10px 51px;
 }
 
 .partText {
@@ -66,11 +72,9 @@ h3 {
     font-weight: 400;
     font-size: 20px;
     color: #D5D4D8;
-    padding: 10px 126px 40px 52px;
 }
 
 h4 {
-    padding-left: 57%;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 12px;
@@ -79,23 +83,18 @@ h4 {
 
 hr {
     border: 1px solid #2F3E53;
-    margin-top: 50px;
     width: 450px;
 }
 
 .password {
-    width: 400px;
+    width: 380px;
     height: 39px;
     background: #273549;
     border-radius: 6px;
-    margin-left: 150px;
-    margin-right: 10px;
 }
 
 input {
     height: 42px;
-    margin-left: 100px;
-    padding-left: 30px;
     border-radius: 4px;
     border: none;
     background-color: rgba(255, 255, 255, 0.712);
@@ -115,4 +114,6 @@ p {
 
 .passwords {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
